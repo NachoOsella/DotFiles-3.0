@@ -1,0 +1,24 @@
+-- Autocmds are automatically loaded on the VeryLazy event
+-- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
+--
+-- Add any additional autocmds here
+-- with `vim.api.nvim_create_autocmd`
+--
+-- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
+-- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+--
+--
+
+-- vim.api.nvim_create_autocmd("FileType", {
+--     pattern = "Avante",
+--     callback = function()
+--         vim.api.nvim_set_hl(0, "AvanteSidebarNormal", { link = "Normal" })
+--         vim.api.nvim_set_hl(0, "AvanteSidebarWinSeparator", { link = "WinSeparator" })
+--
+--         local normal_hl = vim.api.nvim_get_hl(0, { name = "Normal" })
+--         if normal_hl.bg then
+--             local normal_bg = string.format("#%06x", normal_hl.bg)
+--             vim.api.nvim_set_hl(0, "AvanteSidebarWinHorizontalSeparator", { fg = normal_bg })
+--         end
+--     end,
+-- })
